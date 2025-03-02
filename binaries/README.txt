@@ -22,8 +22,11 @@
 
 Примечания:
 ----------
-- Исполняемые файлы могут быть довольно большими, так как включают все 
-  необходимые библиотеки.
+- Эти исполняемые файлы оптимизированы по размеру с использованием:
+  * Исключения неиспользуемых модулей Python
+  * Удаления отладочных символов
+  * Сжатия UPX (если доступно)
+  * Индивидуальных спецификаций сборки
 - Если программа не запускается, попробуйте запустить её с правами 
   администратора.
 
@@ -60,7 +63,11 @@ Usage:
 
 Notes:
 -----
-- The executable files may be quite large as they include all necessary libraries.
+- These executable files are size-optimized using:
+  * Exclusion of unused Python modules
+  * Removal of debug symbols
+  * UPX compression (if available)
+  * Individual build specifications
 - If a program doesn't start, try running it with administrator privileges.
 
 Controls:

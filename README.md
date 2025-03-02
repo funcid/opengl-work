@@ -46,6 +46,12 @@
 ### Сборка отдельного проекта
 - `python build_single_binary.py <имя_файла.py>`
 
+**Оптимизация размера**: Скрипты сборки применяют следующие оптимизации для уменьшения размера файлов:
+- Исключение неиспользуемых модулей Python
+- Удаление отладочных символов
+- Сжатие UPX (если доступно) 
+- Индивидуальные spec-файлы для каждого проекта
+
 ## Структура проекта
 
 - `/utils` - вспомогательные модули для OpenGL, графики и UI
@@ -118,6 +124,12 @@ If you want to rebuild the binaries:
 
 ### Building a Single Project
 - `python build_single_binary.py <filename.py>`
+
+**Size Optimization**: The build scripts apply the following optimizations to reduce file sizes:
+- Exclusion of unused Python modules
+- Removal of debug symbols
+- UPX compression (if available)
+- Individual spec files for each project
 
 ## Project Structure
 
